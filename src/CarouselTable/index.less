@@ -1,0 +1,41 @@
+.table {
+  display: table;
+  border-collapse: collapse;
+}
+.table-tr {
+  // display: table-row;
+  height: 30px;
+}
+.table-title {
+  font-size: 0.2rem;
+  background: rgba(14, 148, 235, 0.8);
+  color: white;
+}
+.table-th {
+  display: table-cell;
+  font-weight: bold;
+  height: 100%;
+  border: 1px solid gray;
+  text-align: center;
+  vertical-align: middle;
+}
+.table-td {
+  height: 100%;
+  border: 1px solid gray;
+  // border-bottom: 1px solid gray;
+  text-align: center;
+  display: table-cell;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, .7);
+}
+.table .table-tr:nth-child(2n+1) {
+  background: rgba(14, 148, 235, 0.102);
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 0px solid transparent;
+}

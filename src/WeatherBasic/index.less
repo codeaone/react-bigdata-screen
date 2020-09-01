@@ -1,0 +1,35 @@
+
+.box-weather {
+    width: 1.8rem;
+    height: 0.65rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.box-weather>img {
+    height: 100%;
+}
+
+.box-weather>div {
+    width: 0.8rem;
+    height: 100%;
+    padding-left: 0.1rem;
+}
+
+.box-weather>div>p {
+    font-size: 0.12rem;
+    color: #cdddf7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 0.24rem;
+    line-height: 0.24rem;
+}
+
+.box-weather>div>p.weather-active {
+    color: white;
+    font-size: 0.16rem;
+}

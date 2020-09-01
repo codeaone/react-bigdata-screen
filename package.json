@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "name": "opencode",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "echarts": "^4.9.0",
+    "echarts-for-react": "^2.0.16",
+    "react": "^16.12.0",
+    "react-slick": "^0.27.10",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/echarts": "^4.6.5",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.9",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0"
+  }
+}
