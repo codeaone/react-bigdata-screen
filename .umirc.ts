@@ -10,12 +10,14 @@ export default defineConfig({
     null,
     {
       title: 'GitHub',
-      path: 'https://github.com/ant-design/pro-components',
+      path: 'https://github.com/codeaone/react-bigdata-screen',
     },
     {
       title: '更新日志',
-      path: 'https://github.com/ant-design/pro-components',
+      path: 'https://github.com/codeaone/react-bigdata-screen',
     },
   ],
+  publicPath: '/react-bigdata-screen/',
+  base:'/react-bigdata-screen'
   // more config: https://d.umijs.org/config
 });
